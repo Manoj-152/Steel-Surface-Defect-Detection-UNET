@@ -18,8 +18,8 @@ rootdir
     │    ├── model.py
     │    └── train.py
     │
-    ├── 
-    ├── README.md
+    ├── best_64x400.ckpt
+    ├── best_128x800.ckpt
     │
     ├── README.md
     └── Result_Tabulation.png
