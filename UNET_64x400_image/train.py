@@ -71,7 +71,7 @@ class DiceLoss(nn.Module):
 
     def forward(self, inputs, targets, smooth=1e-5):
         batch_size = inputs.size(0)
-        targets = torch.eye(5)[targets]
+        targets = torch.eye(5).cuda()[targets]
         targets = targets.permute(0,3,1,2)
         targets = targets.cuda()
 
@@ -157,7 +157,7 @@ for epoch in range(50):
                 total_mask[:,:,0] += (one_hot[0]*255).astype(int) # No Defect: Yellow
                 total_mask[:,:,1] += (one_hot[0]*255).astype(int)
 
-                one_hot_mask = torch.eye(5)[mask[ind]]
+                one_hot_mask = torch.eye(5).cuda()[mask[ind]]
                 one_hot_mask = one_hot_mask.permute(2,0,1)
                 one_hot_mask = one_hot_mask.detach().cpu().numpy()
                 total_gt = np.zeros([64,400,3],dtype=int)
