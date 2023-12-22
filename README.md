@@ -1,6 +1,7 @@
 # Steel-Surface-Defect-Detection
 
 Project on steel defect detection for the Artificial Intelligence in Manufacturing course offered in IIT Madras. This project involves performing semantic segmentation on pictures of steel surfaces to classify and localize the surface defects using the UNET architecture. The dataset for this project is taken from [Kaggle](https://www.kaggle.com/c/severstal-steel-defect-detection) which contains about 12000 train images and 6000 test images(more information is available on the Kaggle website).
+(Please download and add the dataset under the root directory, for the code to work.)
 
 ## Files Present
 
