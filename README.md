@@ -16,12 +16,6 @@ rootdir
     │    ├── model.py
     │    └── train.py
     │
-    ├── Model2_Modified_UNET/
-    │    ├── dataset.py
-    │    ├── model.py
-    |    ├── lovasz_softmax.py
-    |    ├── train.py
-    │    └── README.md (experimental details)
     │
     ├── README.md
     └── Result_Tabulation.png
